@@ -15,6 +15,7 @@ def mae_predict(trainX,trainY,model, thresh=0.2):
         testX = pickle.load(infile)
     print trainX.shape, trainY.shape, testX.shape
 
+    # probs from first classification stage 
     pred_f1 = np.array(pd.read_table('f1.csv', sep=','))
     print pred_f1.shape
 
