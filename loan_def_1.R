@@ -22,6 +22,8 @@ seeds = c(77,2014,135,87,45,742,986,114,65)
 for (j in names(df)) {
 
     #if ( strtoi(strtail(j, -1))<=602 ) next 
+    
+    # good features
     if (j == 'f2')  next
     if (j == 'f41')  next
     if (j == 'f262')  next
