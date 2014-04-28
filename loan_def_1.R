@@ -90,3 +90,6 @@ golden_test_ = read.csv('golden_test.csv')
 
 # then traing on full training data and predict probabilities of non-default for test, save them
 # the same code as above, but without splitting, nothing interesting
+
+
+
