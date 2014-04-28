@@ -10,6 +10,7 @@ from sklearn.cross_validation import train_test_split
 # if prob > thresh => default (i.e. 1)
 def mae_predict(trainX,trainY,model, thresh=0.2):
 
+    # good features from cv
     with open('golden_mae_test.dat', 'rb') as infile:
         testX = pickle.load(infile)
     print trainX.shape, trainY.shape, testX.shape
