@@ -81,7 +81,6 @@ for (j in names(df)) {
 # test data
 df_test = read.csv('test.csv')        
 
-# imputing missing data
 # I know, it's a data snooping, but kaggle allows to do this
 for (i in names(df_test)) {
     if (any(is.na(df_test[i]))) df_test[i] <- with(df_test, impute(df_test[i], mean))
