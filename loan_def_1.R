@@ -17,7 +17,6 @@ for (i in names(df)) {
 # golden features wich were already found
 golden_ = read.csv('golden.csv')  
 
-
 #------------------- CV part [0.9274952] <- 0.9271879 <- 0.92672 <- 0.9263248
 seeds = c(77,2014,135,87,45,742,986,114,65)
 for (j in names(df)) {
@@ -72,14 +71,11 @@ for (j in names(df)) {
     cat(j, scr/length(seeds),'\n' )
 
 }
-
-
 #---------------------------------------------------------------------------------------
 
 # I save good features manually, don't include this part, nothing interesting
 
 #---------------------------------------------------------------------------------------
-
 # test data
 df_test = read.csv('test.csv')        
 
@@ -89,9 +85,7 @@ for (i in names(df_test)) {
     if (any(is.na(df_test[i]))) df_test[i] <- with(df_test, impute(df_test[i], mean))
 }
 
-
 golden_test_ = read.csv('golden_test.csv')  
-
 
 # then traing on full training data and predict probabilities of non-default for test, save them
 # the same code as above, but without splitting, nothing interesting
