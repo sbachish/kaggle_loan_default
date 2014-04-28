@@ -7,7 +7,7 @@ require(datamart)
 
 
 # trainig data
-df = read.csv('kaggle/loan_default/train.csv')        
+df = read.csv('train.csv')        
 
 # imputing missing data
 for (i in names(df)) {
@@ -15,7 +15,7 @@ for (i in names(df)) {
 }
 
 # golden features wich were already found
-golden_ = read.csv('kaggle/loan_default/golden.csv')  
+golden_ = read.csv('golden.csv')  
 
 
 #------------------- CV part [0.9274952] <- 0.9271879 <- 0.92672 <- 0.9263248
