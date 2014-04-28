@@ -73,7 +73,7 @@ for (j in names(df)) {
 }
 #---------------------------------------------------------------------------------------
 
-# I save good features manually, don't include this part, nothing interesting
+# I saved good features manually, don't include this part, nothing interesting
 
 #---------------------------------------------------------------------------------------
 # test data
